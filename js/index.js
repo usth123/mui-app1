@@ -77,7 +77,7 @@ const jsCopy = function(obj) {
         if (u.indexOf('Android') > -1) {
             // alert('安卓啊');
             var $copyPP = obj.parentNode.firstChild.nextElementSibling,
-                $copyText = obj.parentNode.lastChild.nextElementSibling;
+                $copyText = obj.parentNode.lastChild;
             $copyText.innerHTML = $copyPP.innerHTML.replace(/<[^>]+>/g, "");
 
             $copyText.select(); // 选择对象
