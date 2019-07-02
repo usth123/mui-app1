@@ -27,9 +27,9 @@ function jsCopy(obj) {
     // 安卓
     if (u.indexOf('Android') > -1) {
         // alert('安卓啊');
-        var $copyPP = $(obj).parent().find('.copyPp')[0],
-            $copyText = $(obj).parent().find('.copyText')[0];
-        $copyText.innerHTML = $copyPP.innerHTML;
+        var $copyPP = $(obj).parent().find('.copyPp'),
+            $copyText = $(obj).parent().find('.copyText');
+        $copyText.val($copyPP.html());
         console.log($copyText)
         $copyText.select(); // 选择对象
         document.execCommand("Copy"); // 执行浏览器复制命令
