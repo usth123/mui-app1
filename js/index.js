@@ -30,6 +30,7 @@ function jsCopy(obj) {
         var $copyPP = $(obj).parent().find('.copyPp')[0],
             $copyText = $(obj).parent().find('.copyText')[0];
         $copyText.innerHTML = $copyPP.innerHTML;
+        console.log($copyText)
         $copyText.select(); // 选择对象
         document.execCommand("Copy"); // 执行浏览器复制命令
     }
