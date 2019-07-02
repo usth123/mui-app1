@@ -99,6 +99,7 @@ const jsCopy = function(obj) {
 //
 let copyBtns = document.querySelectorAll('.js-copy-btn');
 copyBtns.forEach((obj) => {
+    console.log(obj)
     jsCopy(obj);
 
 });
