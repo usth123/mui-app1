@@ -27,8 +27,8 @@ function jsCopy(obj) {
     // 安卓
     if (u.indexOf('Android') > -1) {
         // alert('安卓啊');
-        var $copyPP = obj.parentNode.firstChild.nextElementSibling,
-            $copyText = obj.parentNode.lastChild.nextElementSibling;
+        var $copyPP = $(obj)[0].parentNode.firstChild.nextElementSibling,
+            $copyText = $(obj)[0].parentNode.lastChild.nextElementSibling;
         $copyText.innerHTML = $copyPP.innerHTML.replace(/<[^>]+>/g, "");
         $copyText.select(); // 选择对象
         document.execCommand("Copy"); // 执行浏览器复制命令
@@ -38,5 +38,5 @@ function jsCopy(obj) {
         obj.innerHTML = '点击复制文案';
         alert('若点击复制文案无效，请长按内容手动复制！');
     }
-    $('#isShow').html("复制成功");
+    alert("复制成功");
 }
