@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/vconsole.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/vconsole.js"></script>
 </head>
+
 <body>
-	<div class="copy">
+    <!-- <div class="copy">
 		复制的内容
 	</div>
-	<button id="copy" onclick="jsCopy('.copy')">复制</button>
+	<button id="copy" onclick="jsCopy('.copy')">复制</button> -->
+    <section class="copy-demo">
+        <ul class="ul">
+            <li class="li">
+                <div class="copy-pp">
+                    1.老公做错事被老婆一顿数落，后互相不答理，直到她放了一个屁，老公紧接着也放了一个后，老婆：“哟，还敢顶嘴？”。
+                </div>
+                <button type="button" class="copy-btn js-copy-btn">点击复制文字</button>
+                <textarea class="copy-text" value="" readonly="readonly"></textarea>
+            </li>
+            <li class="li">
+                <div class="copy-pp">
+                    2.人的一生都会扮演很多角色，如果你不高兴，你可以把剧本扔了。不过记住，有一份剧本是真真属于你的，千万别丢错了。
+                </div>
+                <button type="button" class="copy-btn js-copy-btn">点击复制文字</button>
+                <textarea class="copy-text" value="" readonly="readonly"></textarea>
+            </li>
+            <li class="li">
+                <div class="copy-pp">
+                    3.现在演戏的都去唱歌了，唱不了歌的都去写书了，写不了书的都去演戏了，演不了戏的就又去唱歌了。演艺圈是个圈嘛。
+                </div>
+                <button type="button" class="copy-btn js-copy-btn">点击复制文字</button>
+                <textarea class="copy-text" value="" readonly="readonly"></textarea>
+            </li>
+        </ul>
+    </section>
 </body>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
-	var vConsole = new VConsole();
+var vConsole = new VConsole();
 </script>
+
 </html>
