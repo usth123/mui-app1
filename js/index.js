@@ -31,7 +31,7 @@ function jsCopy(obj) {
             $copyText = $(obj).parent().find('.copyText');
         $copyText.val($copyPP.html());
         console.log($copyText)
-        $copyText.select(); // 选择对象
+        $copyText[0].select(); // 选择对象
         document.execCommand("Copy"); // 执行浏览器复制命令
     }
     // 安卓系统的UC浏览器
