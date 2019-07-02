@@ -27,15 +27,13 @@ function jsCopy(obj) {
     // 安卓
     if (u.indexOf('Android') > -1) {
         // alert('安卓啊');
-        var $copyPP = $(obj)[0].parentNode.firstChild.nextElementSibling,
-            $copyText = $(obj)[0].parentNode.lastChild.nextElementSibling;
-        $copyText.innerHTML = $copyPP.innerHTML.replace(/<[^>]+>/g, "");
+            $copyText = $(obj)[0];
         $copyText.select(); // 选择对象
         document.execCommand("Copy"); // 执行浏览器复制命令
     }
     // 安卓系统的UC浏览器
     if (u.indexOf('Android') > -1 && u.indexOf('UCBrowser') > -1) {
-        obj.innerHTML = '点击复制文案';
+        $(obj)[0].innerHTML = '点击复制文案';
         alert('若点击复制文案无效，请长按内容手动复制！');
     }
     alert("复制成功");
